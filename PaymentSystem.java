@@ -17,8 +17,8 @@ abstract class PaymentMethod {
     }
 }
 
-class UpiPayment extends PaymentMethod {
-    UpiPayment(double amount) {
+class UpiOption extends PaymentMethod {
+    UpiOption(double amount) {
         super(amount);
     }
 
@@ -29,8 +29,8 @@ class UpiPayment extends PaymentMethod {
     }
 }
 
-class CreditCardPayment extends PaymentMethod {
-    CreditCardPayment(double amount) {
+class CardOption extends PaymentMethod {
+    CardOption(double amount) {
         super(amount);
     }
 
@@ -41,8 +41,8 @@ class CreditCardPayment extends PaymentMethod {
     }
 }
 
-class NetBankingPayment extends PaymentMethod {
-    NetBankingPayment(double amount) {
+class NetBankingOption extends PaymentMethod {
+    NetBankingOption(double amount) {
         super(amount);
     }
 
@@ -55,17 +55,17 @@ class NetBankingPayment extends PaymentMethod {
 
 public class PaymentSystem {
     public static void main(String[] args) {
-        PaymentMethod upi = new UpiPayment(2000);
-        PaymentMethod creditCard = new CreditCardPayment(5000);
-        PaymentMethod netBanking = new NetBankingPayment(10000);
+        PaymentMethod upi = new UpiOption(2000);
+        PaymentMethod card = new CardOption(5000);
+        PaymentMethod netBanking = new NetBankingOption(10000);
 
         upi.paymentStatus();
         upi.pay();
 
         System.out.println();
 
-        creditCard.paymentStatus();
-        creditCard.pay();
+        card.paymentStatus();
+        card.pay();
 
         System.out.println();
 
