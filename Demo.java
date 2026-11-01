@@ -1,33 +1,31 @@
 package MyProfile;
 
-class shape2 {
+class Shape {
     void draw() {
         System.out.println("Drawing a shape");
     }
 }
 
-class circle extends shape2 {
+class Circle extends Shape {
     @Override
     void draw() {
-        System.out.println("Area of circle");
+        System.out.println("Drawing a circle");
     }
 }
 
-class rectangle extends shape2 {
+class Rectangle extends Shape {
     @Override
     void draw() {
-        System.out.println("Area of rectangle");
+        System.out.println("Drawing a rectangle");
     }
 }
 
 public class Demo {
-
     public static void main(String[] args) {
+        Shape first = new Circle();
+        Shape second = new Rectangle();
 
-        shape2 s1 = new circle();
-        shape2 s2 = new rectangle();
-
-        s1.draw();
-        s2.draw();
+        first.draw();
+        second.draw();
     }
 }
