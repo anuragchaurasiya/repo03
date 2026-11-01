@@ -1,3 +1,4 @@
+// Concepts: inheritance, method overriding, polymorphism, and fare calculations.
 package MyProfile;
 
 class Ride {
