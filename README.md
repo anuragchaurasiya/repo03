@@ -19,7 +19,7 @@
 | Console input and validation | `CurrencyConverter.java` | Reading values with `Scanner` and checking numeric input |
 | Packages | All source files | Organising classes in the `MyProfile` package |
 
-> Interfaces are not currently demonstrated by the checked source files, so they are not listed as a used concept.
+> Interface implementation is not currently included in these examples; the polymorphism examples use class inheritance and method overriding.
 
 ## Example programs
 
