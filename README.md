@@ -4,9 +4,22 @@
 
 <p align="center"><strong>Java examples for learning object-oriented programming and small console applications.</strong></p>
 
-## Concepts
+## Concepts Used
 
-Classes and objects, constructors, inheritance, method overriding, abstraction, polymorphism, interfaces, packages and basic input validation.
+| Concept | Where it appears | What it demonstrates |
+|---|---|---|
+| Classes and objects | All example files | Defining classes and creating object instances |
+| Constructors | `PaymentSystem.java` | Initialising payment objects and validating constructor input |
+| Encapsulation | `PaymentSystem.java` | Keeping the amount field protected and exposing behaviour through methods |
+| Inheritance | `Payment.java`, `PaymentSystem.java`, `Uber.java` | Creating specialised payment and ride classes from parent classes |
+| Method overriding | `Payment.java`, `PaymentSystem.java`, `Uber.java` | Providing subclass-specific implementations of `pay()` and `calculateFare()` |
+| Abstraction | `PaymentSystem.java` | Defining an abstract payment method contract |
+| Runtime polymorphism | `Payment.java`, `PaymentSystem.java`, `Uber.java` | Calling overridden methods through parent-class references |
+| Methods and calculations | `Area12.java`, `Uber.java` | Reusable area and fare calculations |
+| Console input and validation | `CurrencyConverter.java` | Reading values with `Scanner` and checking numeric input |
+| Packages | All source files | Organising classes in the `MyProfile` package |
+
+> Interfaces are not currently demonstrated by the checked source files, so they are not listed as a used concept.
 
 ## Example programs
 
