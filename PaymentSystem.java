@@ -12,7 +12,7 @@ abstract class payment{
 class UPI_Payment extends payment{
 	UPI_Payment (double amount){
 	super(amount);
-	/@Override
+	@Override
 }
 void pay() {
 	System.out.println("UPI_payment");
