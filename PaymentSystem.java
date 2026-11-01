@@ -6,37 +6,37 @@ abstract class payment{
 		}
 		abstract void pay();
 		void paymentStatus() {
-			System.out.println("payment porcessing...!!!");
+			System.out.println("Payment processing...");
 		}
 	}
 class UPI_Payment extends payment{
 	UPI_Payment (double amount){
 	super(amount);
-	///@override
+	/@Override
 }
 void pay() {
 	System.out.println("UPI_payment");
-	System.out.println("Amount"+amount);
+	System.out.printf("Amount: ₹%.2f%n", amount);
 }
 }
 class Credit_Card_Payment extends payment{
 	Credit_Card_Payment(double amount){
 		super(amount);
 	}
-//@override
+@Override
 void pay() {
 	System.out.println("Credit_Card_Payment");
-	System.out.println("Amount"+amount);
+	System.out.printf("Amount: ₹%.2f%n", amount);
 }
 }
-class Net_Bankinng_Payment extends payment{
-	Net_Bankinng_Payment(double amount){
+class Net_Banking_Payment extends payment{
+	Net_Banking_Payment(double amount){
 		super(amount);
 	}
-	//@override
+	@Override
 	void pay() {
-		System.out.println("Net_Bankinng_Payment");
-		System.out.println("Amount"+amount);
+		System.out.println("Net_Banking_Payment");
+		System.out.printf("Amount: ₹%.2f%n", amount);
 	}
 }
 public class PaymentSystem {
@@ -55,7 +55,7 @@ public class PaymentSystem {
 
         System.out.println();
 
-        payment p2 = new Net_Bankinng_Payment(1000000);
+        payment p2 = new Net_Banking_Payment(1000000);
         p2.paymentStatus();
         p2.pay();
     }
