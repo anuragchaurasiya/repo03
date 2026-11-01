@@ -1,3 +1,4 @@
+// Concepts: abstract classes, constructors, encapsulation, inheritance, and polymorphism.
 package MyProfile;
 
 abstract class PaymentMethod {
