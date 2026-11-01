@@ -1,35 +1,40 @@
 package MyProfile;
-class  Account{
-	void pay() {
-		System.out.println("Pay");
-	}
+
+class Account {
+    void pay() {
+        System.out.println("Processing payment");
+    }
 }
+
 class CreditCardPayment extends Account {
-	void pay() {
-		System.out.println("pay for CreditCardPayment ");
-	}
-	
+    @Override
+    void pay() {
+        System.out.println("Payment made by credit card.");
+    }
 }
-class UpiPayment extends Account{
-	void pay() {
-		System.out.println("pay for UpiPayment");
-	}
+
+class UpiPayment extends Account {
+    @Override
+    void pay() {
+        System.out.println("Payment made by UPI.");
+    }
 }
-class CashPayment extends Account{
-	void pay() {
-		System.out.println("pay for CashPayment");
-	}
+
+class CashPayment extends Account {
+    @Override
+    void pay() {
+        System.out.println("Payment made by cash.");
+    }
 }
+
 public class Payment {
+    public static void main(String[] args) {
+        Account creditCard = new CreditCardPayment();
+        Account upi = new UpiPayment();
+        Account cash = new CashPayment();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Account A=new CreditCardPayment();
-Account A1=new UpiPayment();
-Account A2=new CashPayment();
-A.pay();
-A1.pay();
-A2.pay();
-	}
-
+        creditCard.pay();
+        upi.pay();
+        cash.pay();
+    }
 }
