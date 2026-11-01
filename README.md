@@ -13,7 +13,7 @@ Classes and objects, constructors, inheritance, method overriding, abstraction, 
 | File | Concept |
 |---|---|
 | `Area12.java` | Methods and area calculations |
-| `CurrncyConverter.java` | Scanner input and numeric validation |
+| `CurrencyConverter.java` | Scanner input and numeric validation |
 | `Demo.java` | Runtime polymorphism |
 | `Payment.java` | Method overriding |
 | `PaymentSystem.java` | Abstract classes and payment subclasses |
@@ -34,7 +34,7 @@ javac -d out *.java
 java -cp out MyProfile.PaymentSystem
 ```
 
-Run another example by replacing `MyProfile.PaymentSystem` with `MyProfile.Area12`, `MyProfile.Demo`, `MyProfile.Payment`, `MyProfile.Uber`, or `MyProfile.CurrncyConverter`.
+Run another example by replacing `MyProfile.PaymentSystem` with `MyProfile.Area12`, `MyProfile.Demo`, `MyProfile.Payment`, `MyProfile.Uber`, or `MyProfile.CurrencyConverter`.
 
 The currency converter asks for a sample exchange rate; use a verified rate for real-world calculations. The ride fares are illustrative practice values.
 
@@ -45,7 +45,7 @@ repo03/
 ├── assets/
 │   └── java-oop-banner.svg
 ├── Area12.java
-├── CurrncyConverter.java
+├── CurrencyConverter.java
 ├── Demo.java
 ├── Payment.java
 ├── PaymentSystem.java
