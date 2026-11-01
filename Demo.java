@@ -1,3 +1,4 @@
+// Concepts: inheritance, method overriding, parent references, and runtime polymorphism.
 package MyProfile;
 
 class Shape {
