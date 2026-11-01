@@ -1,3 +1,4 @@
+// Concepts: Scanner input, try-with-resources, numeric validation, and arithmetic.
 package MyProfile;
 
 import java.util.Scanner;
