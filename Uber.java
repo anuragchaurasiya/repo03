@@ -1,37 +1,44 @@
 package MyProfile;
-class Ride{
-	double calculateFare(double distance) {
-		return 0.0;
-	}	
+
+class Ride {
+    double calculateFare(double distance) {
+        return 0.0;
+    }
 }
-class BickRide extends Ride{
-	double calculateFare(double distance) {
-		return distance*8;
-	}
-}class AutoRide extends Ride{
-	double calculateFare(double distance) {
-		return distance*12;
-	}
+
+class BikeRide extends Ride {
+    @Override
+    double calculateFare(double distance) {
+        return distance * 8;
+    }
 }
-class CarRide extends Ride{
-	double calculateFare(double distance) {
-		return distance*18;
-	}
+
+class AutoRide extends Ride {
+    @Override
+    double calculateFare(double distance) {
+        return distance * 12;
+    }
 }
+
+class CarRide extends Ride {
+    @Override
+    double calculateFare(double distance) {
+        return distance * 18;
+    }
+}
+
 public class Uber {
+    public static void main(String[] args) {
+        double distance = 10.5;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-double distance=10.5;
-Ride Bick=new BickRide();
-Ride Auto=new AutoRide();
-Ride car=new CarRide();
+        Ride bike = new BikeRide();
+        Ride auto = new AutoRide();
+        Ride car = new CarRide();
 
-System.out.println("Distance="+distance+"Km");
-System.out.println("Bick Fare="+Bick.calculateFare(distance));
-System.out.println("Auto Fare="+Auto.calculateFare(distance));
-System.out.println("car Fare="+car.calculateFare(distance));
-
-	}
-
+        System.out.printf("Distance: %.1f km%n", distance);
+        System.out.printf("Bike fare: ₹%.2f%n", bike.calculateFare(distance));
+        System.out.printf("Auto fare: ₹%.2f%n", auto.calculateFare(distance));
+        System.out.printf("Car fare: ₹%.2f%n", car.calculateFare(distance));
+        System.out.println("Note: These are sample per-kilometre rates for OOP practice.");
+    }
 }
