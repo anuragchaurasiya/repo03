@@ -1,64 +1,58 @@
-# ☕ Java OOP & Application Development
+# Java OOP Practice
 
-A collection of Java programs focused on object-oriented programming, classes, constructors, inheritance, abstraction, polymorphism, interfaces and practical console applications.
+<p align="center"><img src="assets/java-oop-banner.svg" alt="Java OOP Practice banner" width="100%" /></p>
 
-## 📚 Concepts Covered
+<p align="center"><strong>Java examples for learning object-oriented programming and small console applications.</strong></p>
 
-- Classes and objects
-- Constructors
-- Encapsulation
-- Inheritance
-- Method overriding
-- Method overloading
-- Abstraction
-- Interfaces
-- Polymorphism
-- Packages
-- Practical application design
+## Concepts
 
-## 🧩 Notable Programs
+Classes and objects, constructors, inheritance, method overriding, abstraction, polymorphism, interfaces, packages and basic input validation.
 
-- `PaymentSystem.java` — abstract payment model with UPI, card and net-banking implementations
-- `Payment.java` — payment abstraction practice
-- `Uber.java` — application-oriented Java practice
-- `Area12.java` — method/class practice
-- `CurrncyConverter.java` — currency conversion practice
+## Example programs
 
-## 🛠️ Tech Stack
+| File | Concept |
+|---|---|
+| `Area12.java` | Methods and area calculations |
+| `CurrncyConverter.java` | Scanner input and numeric validation |
+| `Demo.java` | Runtime polymorphism |
+| `Payment.java` | Method overriding |
+| `PaymentSystem.java` | Abstract classes and payment subclasses |
+| `Uber.java` | Inheritance and fare calculation |
 
-- Java
-- OOP
-- Java Standard Library
-- Eclipse IDE
-- Git & GitHub
+## Requirements
 
-## ▶️ Run Locally
+- JDK 11 or newer
+- Terminal or Java IDE
 
-Compile and run a Java class from the terminal:
+## Compile and run
+
+All source files use the `MyProfile` package. From the repository root:
 
 ```bash
-javac PaymentSystem.java
-java PaymentSystem
+mkdir -p out
+javac -d out *.java
+java -cp out MyProfile.PaymentSystem
 ```
 
-For files using packages, compile/run them from the appropriate project source directory.
+Run another example by replacing `MyProfile.PaymentSystem` with `MyProfile.Area12`, `MyProfile.Demo`, `MyProfile.Payment`, `MyProfile.Uber`, or `MyProfile.CurrncyConverter`.
 
-## 🎯 Purpose
+The currency converter asks for a sample exchange rate; use a verified rate for real-world calculations. The ride fares are illustrative practice values.
 
-This repository demonstrates the progression from Java fundamentals to object-oriented application design.
+## Project structure
 
-## 🚀 Next Steps
+```text
+repo03/
+├── assets/
+│   └── java-oop-banner.svg
+├── Area12.java
+├── CurrncyConverter.java
+├── Demo.java
+├── Payment.java
+├── PaymentSystem.java
+├── Uber.java
+└── README.md
+```
 
-- Collections Framework
-- Generics
-- Exception handling
-- File handling
-- Serialization
-- JDBC
-- Spring Boot and REST APIs
+## Maintainer
 
-## 👨‍💻 Developer
-
-**Anurag Chaurasiya**
-
-GitHub: https://github.com/anuragchaurasiya
+[Anurag Chaurasiya](https://github.com/anuragchaurasiya)
