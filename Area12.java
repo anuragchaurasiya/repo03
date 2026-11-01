@@ -1,3 +1,4 @@
+// Concepts: classes, objects, methods, parameters, constants, and area formulas.
 package MyProfile;
 
 class Area {
